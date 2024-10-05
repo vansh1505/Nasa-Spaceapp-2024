@@ -4,8 +4,8 @@ import Notice from './Notice';
 const Home = () => {
   return (
     <>
-    <div className="h-[84vh] flex">
-        <img className='h-52 w-52' src='astronaut.png'/>
+    <div className="h-[84vh] flex justify-between">
+        {/* <img className='h-52 w-52' src='astronaut.png'/> */}
       <div className="w-4/5 flex flex-col justify-center">
         <h1 className="text-white text-center tracking-widest text-5xl filter comfortaa">EXOPLANETS</h1>
         <p className="comfortaa text-white text-center text-2xl mt-16 px-16 tracking-wider leading-relaxed">

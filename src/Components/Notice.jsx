@@ -40,7 +40,7 @@ const Notice = () => {
   }, []);
 
   return (
-    <div className="w-80 h-5/6 border-2 border-gray-300 shadow-lg rounded-xl overflow-hidden">
+    <div className="w-96 h-[82vh] border-2 border-gray-300 shadow-lg rounded-xl overflow-hidden glass-effect">
       <h2 className="text-center text-xl font-bold py-3 text-white relative">
         InfoBoard
         <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2/3 h-0.5 bg-cyan-400"></span>
@@ -49,7 +49,7 @@ const Notice = () => {
       <div ref={scrollRef} className="h-full overflow-hidden relative">
         <div className="space-y-3 p-2 absolute inset-0">
           {notices.concat(notices).map((notice, index) => (
-            <div key={index} className="p-4 text-white border bg-black/40 rounded-lg shadow-md hover:shadow-white/50 transition-transform duration-200 transform hover:scale-105">
+            <div key={index} className="p-4 cursor-pointer text-white border bg-black/40 rounded-lg shadow-md hover:shadow-white/20 transition-transform duration-200 transform">
               {notice}
             </div>
           ))}
